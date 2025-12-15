@@ -35,6 +35,15 @@
                 padding: 15px;
                 border: red 5px solid;
             }
+            footer {
+                background-color: black;
+                color: #ffffff;
+                text-align: center;
+                padding:  10px;
+                font-size: 16px;
+                margin-top: 30px;
+
+            }
 
 </style>
 
@@ -45,22 +54,22 @@
     <p>Welcome to the HTML tutorial. Click on the topics below to start learning:</p>
     <h2>Topics</h2>
     <ul>
-        <li><a href="">Introduction to HTML</a></li>
-        <li><a href="">HTML Document Structure</a></li>
-        <li><a href="">Heading</a></li>
-        <li><a href="">Paragraph</a></li>
-        <li><a href="">Text Formatting</a></li>
-        <li><a href="">Creating Links</a></li>
-        <li><a href="">Lists (Ordered and Unordered)</a></li>
-        <li><a href="">Adding Images</a></li>
-        <li><a href="">Creating Tables</a></li>
-        <li><a href="">HTML Forms</a></li>
-        <li><a href="">Embedding Multimedia (Audio & Video)</a></li>
-        <li><a href="">Semantic HTML</a></li>
+        <li><a href="#intro">Introduction to HTML</a></li>
+        <li><a href="#structure">HTML Document Structure</a></li>
+        <li><a href="#heading">Heading</a></li>
+        <li><a href="#paragraph">Paragraph</a></li>
+        <li><a href="#formatting">Text Formatting</a></li>
+        <li><a href="#link">Creating Links</a></li>
+        <li><a href="#list">Lists (Ordered and Unordered)</a></li>
+        <li><a href="#images">Adding Images</a></li>
+        <li><a href="#table">Creating Tables</a></li>
+        <li><a href="#form">HTML Forms</a></li>
+        <li><a href="#semantic">Semantic HTML</a></li>
+        <li><a href="#workshop">My workshop</a></li>
     </ul> 
     <hr>
     <!-- <หัวข้อ1> -->
-     <h2>Introduction to HTML</h2>
+     <h2 id="intro">Introduction to HTML</h2>
 
  <pre>
      - HTML stands for Hyper Text Markup Language
@@ -74,11 +83,11 @@
      - HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and
      content of web pages
      - HTML is not a programming language, but a markup language</pre>
- <a href="">Top</a>
+ <a href="#">Top</a>
       <hr>
        
    <!-- หัวข้อ2 -->
-    <h2>Document Structure</h2> 
+    <h2 id="structure">Document Structure</h2> 
   <p>An HTML document has the following basic structure... </p>
  <pre><xmp>
   คำอธิบาย:
@@ -100,8 +109,8 @@
 <hr>
 <!-- หัวข้อ3 -->
 
- <h2>Heading</h2>
-  <a href="">workshop</a>
+ <h2 id="heading">Heading</h2>
+  <p><a href="W03_01_heading.html">workshop</a></p>
  <p><xmp>HTML headings are defined with the <h1> to <h6> tags...</xmp></p>
     <pre>
 - &lt;h1&gt;: Heading 1
@@ -111,18 +120,18 @@
  - &lt;h5&gt;: Heading 5
  - &lt;h6&gt;: Heading 6
 </pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <!-- หัวข้อ4 -->
-<h2>Paragraph</h2>
-<a href="">workshop</a>
+<h2 id="paragraph">Paragraph</h2>
+<p><a href="">workshop</a></p>
 <p><xmp>HTML paragraphs are defined with the <p> tag...</xmp></p>
 <pre>
   - &lt;p&gt;: Paragraph
 </pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <!-- หัวข้อ5 -->
-<h2>Text Formatting</h2>
- <a href="">workshop</a>
+<h2 id="formatting">Text Formatting</h2>
+ <p><a href="">workshop</a></p>
 <p><xmp>HTML provides various elements to format text...</xmp></p>
 <pre>
 - &lt;h1&gt; to &lt;h6&gt;: Headings
@@ -146,9 +155,9 @@
 - &lt;q&gt;: Inline quotation
 - &lt;code&gt;: Code snippet
 </pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <!-- หัวข้อ6 -->
-  <h2>Creating Links</h2>
+  <h2 id="link">Creating Links</h2>
 <a href="">workshop</a>
 <p><xmp>HTML links are defined with the <a> tag...</xmp></p>
     <pre>
@@ -172,9 +181,9 @@
 - Use the download attribute to create a download link
 - Example: &lt;a href="file.txt" download&gt;Download Text File&lt;/a&gt;
 </pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <!-- หัวข้อ7 -->
-<h2>Lists (Ordered and Unordered)</h2>
+<h2 id="list">Lists (Ordered and Unordered)</h2>
  <a href="">workshop</a>
 <p>HTML lists are defined with the &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; tags...</p>
    <pre>
@@ -218,9 +227,9 @@
 - Example: &lt;ol style="list-style-type: upper-roman;"&gt;
 - Example: &lt;ol style="list-style-type: lower-roman;"&gt;
 </pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <!-- หัวข้อ8 -->
-  <h2>Adding Images</h2>
+  <h2 id="images">Adding Images</h2>
  <a href="">workshop</a>
 <p>HTML images are defined with the &lt;img&gt; tag...</p>
 <pre>
@@ -263,9 +272,9 @@ height: 150px;
 object-fit: cover;
 }
 </pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <!-- หัวข้อ9 -->
- <h2>Creating Tables</h2>
+ <h2 id="table">Creating Tables</h2>
  <a href="">Workshop 1</a>
 
  <a href="">Workshop 2</a>
@@ -276,9 +285,9 @@ object-fit: cover;
 - &lt;th&gt;: Table header
 - &lt;td&gt;: Table data/cell
 </pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <!-- หัวข้อ10 -->
- <h2>HTML Forms</h2>
+ <h2 id="form">HTML Forms</h2>
   <a href="">Workshop 1</a>
 
  <a href="">Workshop 2</a>
@@ -315,9 +324,9 @@ radio, checkbox, date, file
 - การสง่ ขอ้มลู ไปยังเซริฟ์ เวอร์
 - การใช ้JavaScript (เชน่ onsubmit)
 </pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <!-- หัวข้อ11 -->
-<h2>Semantic HTML</h2>
+<h2 id="semantic">Semantic HTML</h2>
 <p>Semantic HTML elements clearly define the content of a web page...</p>
 <pre>
 - &lt;header&gt;: Defines a header for a document or section
@@ -327,6 +336,18 @@ radio, checkbox, date, file
 - &lt;aside&gt;: Defines content aside from the page content
 - &lt;footer&gt;: Defines a footer for a document or section
 </pre>
-<a href="">Top</a>
+<a href="#">Top</a>
+<h2 id="workshop">My Workshop</h2>
+  <a href="">workshop 01 :rabbit</a>
+  <br>
+ <a href=""> workshop 02 :login</a>
+ <br>
+
+<a href="#">Top</a>
+<hr>
+<!-- หัวข้อ13 -->
+ 
+ <a href="https://www.w3schools.com/">Learn more about HTML</a>
+ <footer><p>&copy; 2024 HTML Tutorial by Suphanat Junprem</p></footer>
 </body>
 </html>
