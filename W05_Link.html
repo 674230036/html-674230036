@@ -47,7 +47,6 @@
         border-radius: 15px;
         margin: 20px 0;
         border-top: 4px solid rgb(56, 2, 248);
-        height: fit-content;
     }
      .card.module-1{
          border-top: 4px solid rgb(255, 0, 0);
@@ -172,80 +171,6 @@
        .color1{
         color: #b3b0b0;
        }
-
-       code{
-        background-color: #9c9a9a;
-        padding: 4px;
-        border-radius: 5px;
-       }
-       .image-link img{
-        width: 200px;
-        border-radius: 12px;
-        transition: 0.3;
-       }
-       .image-link img:hover{
-        transform:  scale(1.1);
-        transform:  rotate(10deg);
-        box-shadow: 0 4px 12px; color: rgb(212, 0, 255);
-       }
-       .card-grid{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 25px;
-       }
-       pre{
-        background-color: #ffffff;
-        border-left: 4px solid rgb(116, 38, 241);
-        border-radius: 5px;
-        padding: 15px;
-        white-space: pre-wrap;
-
-        overflow: auto;
-       }
-              /* ======================================================================================================================================== */
-       .card-grid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-       }
-      .grid-3-col{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 25px;
-      }
-      /* Tablet */
-      @media (max-width: 768){
-        .card-grid{
-          grid-template-columns: 1fr;  
-        }
-        .grid-3-col{
-           grid-template-columns: 1fr; 
-        }
-      }
-      /* mobile */
-         @media (max-width: 576){
-        .grid-3-col{
-          grid-template-columns: repeat(2, 1fr);   
-        }
-        .card-grid{
-          grid-template-columns: 1fr;   
-        }
-      }
-    .bt1{
-        color: #fffafa;
-        text-decoration: none;
-        background-color: rgb(214, 147, 1) ;
-        display:inline-block;
-        text-align: center;
-        padding: 10px 24px;
-        border-radius: 0px;
-    }
-    .bt2{
-
-    }
-    .bt3{
-
-    }
     </style>
 </head>
 <body>
@@ -256,16 +181,15 @@
         <p class="subtitle">เรียนรูปลิ้งหลายรูปเเบบ พร้อมตัวอย่างเเบบฝึกหัด</p> 
           </header>
           <main>
-             <div class="card-grid">
             <!-- หัวข้อ1 -->
             <div class="card">
-            <h2>1.External Link</h2>
+            <h2>External Link</h2>
             <div class="card3">
-                <a href="https://www.wikipedia.org/"  target="_blank" class="link">Visit Wikipedia</a>
+                <a href=""class="link">Visit Wikipedia</a>
                 <p style="margin-top: 0;"><code>target="_blank"</code> เปิดลิ้งในแท็บใหม่</p>
             </div>
             <div class="card3">
-                <a href="https://www.google.com/?hl=th" target="_self " class="link">Visit Google</a>
+                <a href=""class="link">Visit Google</a>
                 <p style="margin-top: 0;"><code>target="_seft"</code> เปิดลิ้งในแท็บใหม่</p>
             </div>
             </div>
@@ -279,9 +203,12 @@
     &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
     &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;
         </pre>
-        <a href="#jumb">Click to Jump</a>
-        <h3 id="jumb" style="margin-top:30px;">This is the jump target</h3>
+        <a href="">Click to Jump</a>
+        <h3>This is the jump target</h3>
             </div>
+           
+           
+           
            
             <!-- หัวข้อ3 -->
                <div class="card module-2">
@@ -291,7 +218,7 @@
     Send an Email
     &lt;/a&gt;
         </pre>
-        <a href="mailto:674230036@webmail.npru.ac.th?subject=จดหมายสมัครงาน">Send an Email</a>
+        <a href="">Send an Email</a>
             </div>
     <!-- หัวข้อ4 -->
             <div class="card module-4">
@@ -299,10 +226,10 @@
           <pre class="left">
     &lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;
         </pre>
-        <a href="file/hello.png"  class="back-linkss" download >Download Text File</a>
+        <a href="index.html" class="back-linkss">Download Text File</a>
         <p class="color1">ต้องมีไฟล์ในโฟสเดอร์จึงจะดาวโหลดได้จริง </p>
             </div>
-              </div>
+
              <!-- หัวข้อ5 -->
             <div class="card module-5">
                <h2>5.Button Link</h2>
@@ -313,7 +240,7 @@
    &lt;/a&gt;
         </pre>
         <a href="index.html" class="back-linkA">Visit Website</a>
-        <p>สร้างปุ่มด้วยเเท็ก <code>Button</code></p>
+        <p>สร้างปุ่มด้วยเเท็ก Button</p>
         <pre class="left">
    &lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
 - มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
@@ -324,33 +251,9 @@
 - ผูกกับ window โดยตรง
    &lt;/a&gt;
         </pre>
-        <div class="grid-3-col">
-          
-        <div>
-          <p>ปุ่ม<code>document.location</code></p>
-                 <button class="bt1" onclick="">HTML Tutorial</button>
-        </div>
-       <div>
-         <p>ปุ่ม<code>location.href</code></p>
-         <button onclick="">Visit Website</button>
-       </div>
-       <div>
-         <p>ตัวอย่างปุ่มจาก<code>https://cssnippets0shefali.dew</code></p>
-               <button onclick="">SUBSCRIBE</button>
-       </div>
-       <div>
-         <p>เพิ่มขอบทอง</p>
-               <button onclick="">SUBSCRIBE</button>
-       </div>
-      <div>
-        <p>เพิ่มอนิเมชันเมื่อชี้ปุ่ม</p>
-        <button onclick="">SUBSCRIBE</button>
-      </div>
-      <div>
-        <p>ปุ่มสีดำ ขอบทอง เเสงวิ่ง</p>
-        <button onclick="">SUBSCRIBE</button>
-      </div>
-            </div> 
+       <button class="btn">HTML Tutorial</button>
+       <button class="btn">Visit Website</button>
+            </div>
 
             <!-- หัวข้อ6 -->
             <div class="card module-6">
@@ -361,8 +264,8 @@
   &lt;img src="images/sample.jpg" width="250"&gt;
   &lt;/a&gt;
         </pre>
-    <a class="image-link" href="https://www.youtube.com" target="_blank">
-   <img src="file/youtube.png" alt="YouTube" width="300" height="350">
+    <a href="https://www.youtube.com" target="_blank">
+   <img src="youtube.png" alt="YouTube" width="300" height="350">
    </a>
     <p class="note">💡หากต้องการใช้รูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น images/photo.jps</p>
             </div>
