@@ -1,132 +1,244 @@
 <style>
-           /* Global CSS Styles */
-{
 
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Global CSS Styles */ {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: rgb(0, 162, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-image: url(https://www.shutterstock.com/image-vector/80s-retro-scifi-background-sun-260nw-555797422.jpg);
+  background-color: #00a2ff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-html {}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
 
- /* Container Styles / */
+/* Container Styles / */
 .container {
-    max-width: 1200px;
-    margin: 200px auto 40px;
+  max-width: 1200px;
+  margin: 200px auto 40px;
 }
 
 /* Share CSS / */
 code {
-    background-color: #ee7904;
-    border-radius: 4px;
-    padding: 2px 4px;
+  background-color: #ee7904;
+  border-radius: 4px;
+  padding: 2px 4px;
 }
 
 pre {
-    background-color: #cafcfd;
-    border-left: (9, 215, 252) 5px solid;
-    padding: 10px;
+  background-color: #fdcaca;
+  border-left: (9, 215, 252) 5px solid;
+  padding: 10px;
 
-    white-space: per-wrap;
-    word-wrap: break-word;
-    border-left: red 5px solid;
+  white-space: per-wrap;
+  word-wrap: break-word;
+  border-left: red 5px solid;
 }
 
-.badge{
-    color: rgb(201, 100, 5);
-    border-radius: 4px;
-    padding: 2px 6px;
-    background-color: #bcbcbc;
-    font-size: 10px;
-    font-weight: bold;
+.badge {
+  color: rgb(201, 100, 5);
+  border-radius: 4px;
+  padding: 2px 6px;
+  background-color: #3a3737;
+  font-size: 10px;
+  font-weight: bold;
 
-    vertical-align: middle;
-
+  vertical-align: middle;
 }
 
-.card{
-    background-color: #ffffff;
-    padding: 25px 30px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    border-top: 10px;
-
+.card {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border-top: 10px;
 }
 
-.noet{}
+.noet {
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* / Group1 Head Styles / */
 header {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    box-shadow: 2px 5px 10px rgb(69, 69, 69);
+  background-color: rgb(241, 82, 202);
+  padding: 20px;
+  box-shadow: 2px 5px 10px rgb(69, 69, 69);
 
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-
 .list-mamu {
-
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .list-mamu li {
-    background-color: rgb(247, 76, 9);
-    padding: 10px 15px;
-    border-radius: 50%;
-    margin-top: 15px;
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+}
+
+.list-mamu li:hover {
+  transform: translateY(-5px);
 }
 
 .list-mamu li a {
-
-    text-decoration: none;
-    color: aliceblue;
-    font-weight: bolder;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  background: linear-gradient(135deg, rgb(255, 217, 2), rgb(255, 137, 2));
+  box-shadow: 0 4px 15px rgb(51, 49, 49);
+  padding: 10px 20px;
+  border-radius: 8px;
 }
 
-
-.list-mamu li:hover {
-        background-color: #ff0000;
-        }
+.list-mamu a:hover {
+  background: linear-gradient(135deg, rgb(209, 154, 2), rgb(158, 3, 230));
+}
 
 h1 {
-    color: #00a2ff;
-    margin: ;
+  color: #00a2ff;
+  margin:;
 }
-
 
 p {
-
 }
+
 /* / Group2 / */
+.img-small {
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.position {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: px dashed rgb(35, 39, 61);
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 3px;
+  background-color: #eb979b;
+  box-shadow: 0 4px 20px rgb(250, 8, 0);
+}
+
+.position.left {
+  justify-content: flex-start;
+}
+
+.position.center {
+  justify-content: center;
+}
+
+.position.right {
+  justify-content: flex-end;
+}
 
 /* / Group3 / */
+.image-fixed {
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  margin-top: 15px;
+}
 
 /* / Group4 / */
+.obj-fit-image {
+  width: 800px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.obj-fit-image.contain {
+  object-fit: contain;
+}
+
+.obj-fit-image.fill {
+  object-fit: fill;
+}
+
+.obj-fit-image.cover {
+  object-fit: cover;
+}
 
 /* / Group5 / */
+.img-youtube img {
+  background-color: rgb(243, 3, 3);
+  box-shadow: 0 4px 20px rgb(53, 52, 52);
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 20px 0;
+  transition: 0.3;
+  padding: 10px 24px;
+  border-radius: 15px;
+}
+
+.img-youtube img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px red;
+  background-color: #413f40;
+}
 
 /* / Group6 / */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gallery img {
+  height: 120px;
+  width: 100%;
+  object-fit: cover;
+}
 
 /* / Group7 / */
-
+figure {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 5px;
+}
 /* / Group8 / */
-
 /* / Group9 / */
+.bg-image {
+  background-image: url("../Liverpool_FC_Logo.svg.png");
+}
 
-/* / Group10 */ */
+.back-link {
+  color: #f9f9fa;
+  text-decoration: none;
+  text-align: center;
+  background-color: rgb(214, 147, 1);
+  padding: 20px 
+  border-radius: 20px;
+  display: block;
+}
+.back-link:hover {
+  color: #ff0015;
+  text-decoration: underline;
+  background-color: rgb(255, 255, 255);
+}
+/* / Group10 */
