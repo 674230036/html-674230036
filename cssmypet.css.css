@@ -1,0 +1,134 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#e6e6e6;
+}
+
+/*NAVBAR*/
+header{
+    background:#ffffff;
+    padding:15px 60px;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:auto;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    width:40px;
+}
+
+.menuhome{
+    list-style:none;
+    display:flex;
+    gap:30px;
+    padding:0;
+    margin:10;
+    transition: transform 0.3s ease;
+}
+.menuhome a:hover {
+  color: white;
+  background-color: rgba(240, 111, 6, 0.992);
+  border: 2px solid rgba(245, 184, 15, 0.992);
+  transform: translateY(-10px);
+}
+
+.menuhome li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.manulog{
+    display:flex;
+    gap:10px;
+}
+
+.login{
+    background:#ccc;
+    padding:6px 14px;
+    border-radius:6px;
+    text-decoration:none;
+    color:black;
+}
+
+.register{
+    background:#f57c00;
+    padding:6px 14px;
+    border-radius:6px;
+    text-decoration:none;
+    color:white;
+}
+
+/*MAIN SECTION*/
+.main{
+    background:#a9c97f;
+    padding:60px 0;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:40px;
+}
+
+.card{
+    background:#f4f4f4;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.card h3{
+    margin-top:15px;
+}
+
+.card p{
+    color:#555;
+    line-height:1.5;
+}
+
+.readmore{
+    display:inline-block;
+    margin-top:15px;
+    background:#f57c00;
+    color:white;
+    padding:8px 18px;
+    border-radius:6px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.readmore:hover{
+    color: white;
+  background-color: rgba(240, 111, 6, 0.992);
+  border: 2px solid rgba(245, 184, 15, 0.992);
+  transform: translateY(-10px);
+}
+
+/*FOOTER*/
+footer{
+    background:#556b2f;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
