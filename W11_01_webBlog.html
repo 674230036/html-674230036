@@ -304,7 +304,7 @@
   <h2 class="newsletter-title">📩 รับข่าวสารใหม่</h2>
 
   <form action="#" method="post">
-
+     
     <div class="newsletter-group">
       <label for="nl-name" class="newsletter-label">ชื่อของคุณ</label>
       <input class="newsletter-input"
@@ -352,6 +352,46 @@
             <div class="widget">
               💬 ติดต่อด่วน
 ชื่อ        เรื่องที่ต้องการติดต่อ      ข้อความสั้นๆ        📤 ส่งเลย
+         <div class="contact-card">
+
+  <h2 class="contact-title">💬 ติดต่อด่วน</h2>
+
+  <form action="#" method="post">
+
+    <div class="contact-group">
+      <label class="contact-label" for="c-name">ชื่อ</label>
+      <input type="text"
+             id="c-name"
+             class="contact-input"
+             placeholder="ชื่อของคุณ">
+    </div>
+
+    <div class="contact-group">
+      <label class="contact-label" for="c-topic">เรื่องที่ต้องการติดต่อ</label>
+      <select id="c-topic" class="contact-select">
+        <option>เรื่องIT</option>
+        <option>เรื่องคอม</option>
+        <option>เรื่องNPRU</option>
+        <option>เรื่องเพื่อน</option>
+      </select>
+    </div>
+
+    <div class="contact-group">
+      <label class="contact-label" for="c-message">ข้อความสั้นๆ</label>
+      <textarea id="c-message"
+                class="contact-textarea"
+                placeholder="อธิบายสั้นๆ..."></textarea>
+    </div>
+
+    <button type="submit"
+            class="contact-btn"
+            onclick="alert('ส่งข้อความเรียบร้อย!')">
+      📩 ส่งเลย
+    </button>
+
+  </form>
+
+</div>
             </div>
 
             <!-- Widget 04 -->
