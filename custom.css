@@ -277,6 +277,55 @@ a:hover {
 .widget + .widget {
   margin-top: 20px;
 }
+/* เเนะนำตัว */
+.widget-title {
+  font-weight: 800;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.auther-photo {
+  background-color: rgba(179, 190, 173, 0.932);
+  /* padding: 70px 0px; */
+  /* text-align: center; */
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.auther-photo2 {
+  background-color: rgba(179, 190, 173, 0.932);
+  /* padding: 70px 0px; */
+  /* text-align: center; */
+  height: 140px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.auther-photo3 {
+  background-color: rgba(179, 190, 173, 0.932);
+  /* padding: 70px 0px; */
+  /* text-align: center; */
+  height: 250px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.btn-facebook {
+  background-color: rgb(17, 0, 255);
+  font-weight: 800;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+.btn-facebook li:hover {
+  transform: translateY(-5px);
+}
 /* -------------------------------------------------------------------- */
 /* css for card 2 = table */
 /* .comparison-tb {
@@ -450,7 +499,6 @@ a:hover {
   margin-right: auto;
 }
 
-
 .newsletter-group {
   margin-bottom: 20px;
 }
@@ -462,7 +510,6 @@ a:hover {
   color: #ffffff;
   margin-bottom: 8px;
 }
-
 
 .newsletter-input,
 .newsletter-select {
@@ -481,7 +528,6 @@ a:hover {
   outline: none;
   box-shadow: 0 0 0 3px rgba(255, 128, 9, 0.3);
 }
-
 
 .newsletter-btn {
   width: 100%;
@@ -507,7 +553,7 @@ a:hover {
   padding: 35px 30px;
   border-radius: 20px;
   background: linear-gradient(135deg, #c1eeaf, #557e6d);
-  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .contact-title {
@@ -547,7 +593,7 @@ a:hover {
 .contact-select:focus,
 .contact-textarea:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(255,255,255,0.4);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
 }
 
 .contact-btn {
@@ -565,4 +611,75 @@ a:hover {
 
 .contact-btn:hover {
   transform: scale(1.05);
+}
+/* ตาราง ราคาทอง*/
+:root {
+  --bg01: rgb(238, 214, 108);
+  --bg02: rgb(240, 198, 85);
+  --bg03: rgb(129, 247, 82);
+  --line: rgb(255, 145, 0);
+  --red: rgb(255, 0, 0);
+  --green: rgb(7, 173, 29);
+}
+.gold-table {
+  border: 1px solid var(--line);
+  border-collapse: collapse;
+  width: 100%;
+}
+.gold-table th,
+.gold-table td {
+  border: 1px solid var(--line);
+  padding: 10px;
+}
+.gold-table thead th,
+.gold-table tbody th {
+  background-color: var(--bg02);
+}
+.gold-table tbody .gold-tabeleiei th,
+.gold-table tbody .gold-tabeleiei td {
+  background-color: var(--bg03);
+  font-weight: 600;
+}
+
+.wrap-gold-table {
+  background-color: var(--bg01);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 2px solid rgb(230, 127, 11);
+}
+.number-right {
+  text-align: right;
+}
+.num-center {
+  text-align: center;
+}
+.textred {
+  color: var(--red);
+  text-align: center;
+}
+.greentext {
+  color: var(--green);
+  text-align: center;
+}
+.icon {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.up {
+  border-bottom: 10px solid rgb(72, 255, 0);
+}
+.down {
+  border-top: 10px solid rgb(255, 0, 0);
+}
+/* ---------------- */
+footer {
+  background-color: #030303;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 40px 0px;
+  margin-top: 20px;
+  text-align: center;
 }
