@@ -10,7 +10,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sarawut's Blog</title>
+    <title>Suphanat's Blog</title>
     <link rel="stylesheet" href="custom.css" />
   </head>
   <body>
@@ -37,14 +37,20 @@
     <!-- Navbar -->
     <nav class="main-nav">
       <div class="wrapper">
-        <ul class="nav-menu">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#" class="active">AI Technology</a></li>
-          <li><a href="#" class="active">Machine Learning</a></li>
-          <li><a href="#" class="active">Deep Learning</a></li>
-          <li><a href="#" class="active">AI Tools</a></li>
-          <li><a href="#" class="active">AI News</a></li>
-        </ul>
+        <div id="hamberger-menu">
+          <span></span>
+        </div>
+        <div id="menu">
+          <ul class="nav-menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#" class="active">AI Technology</a></li>
+            <li><a href="#" class="active">Machine Learning</a></li>
+            <li><a href="#" class="active">Deep Learning</a></li>
+            <li><a href="#" class="active">AI Tools</a></li>
+            <li><a href="#contact" class="active">AI News</a></li>
+            
+          </ul>
+        </div>
       </div>
     </nav>
 
@@ -106,7 +112,7 @@
           <!-- Left Side -->
           <main class="post-list">
             <!-- Card 1 = Image -->
-            <div class="card">
+            <div class="card order-box-image">
               <p class="post-headline">
                 CATEGORY ARCHIVES:<b> RESPONSIVE DESIGN</b>
               </p>
@@ -138,7 +144,7 @@
             </div>
 
             <!-- Card 2 = Table -->
-            <div class="card">
+            <div class="card order-box-table">
               <p class="post-headline">
                 CATEGORY ARCHIVES: <b>CSS DISPLAY PROPERTY</b>
               </p>
@@ -212,7 +218,7 @@
             </div>
 
             <!-- Card 3 = Form -->
-            <div class="card">
+            <div class="card order-box-from" id="contact">
             <h2 style="text-align: center;">📞 ติดต่อเรา</h2>
             <!-- Form -->
             <div class="contact-form-main-card">
@@ -290,9 +296,9 @@
           
           <!-- Right Side -->
            
-          <aside>
+          <aside class="sidebar">
             <!-- Widget 01 -->
-            <div class="widget">
+            <div class="widget order-w-intro">
               <div class="widget-title">สวัสดีครับ ยินดีต้อนรับ</div>
 <p class="post-description">
   ผมชื่อ Suphanat เขียนบล็อกเกี่ยวกับ Startup การตลาด การเขียนโปรแกรม และเทคโนโลยี AI สำหรับ SME และ Startup
@@ -302,7 +308,7 @@
             </div>
 
             <!-- Widget 02 -->
-            <div class="widget">
+            <div class="widget order-w-f-green">
               📧 รับข่าวสารใหม่
 ชื่อของคุณ  อีเมล       สนใจเนื้อหาด้านไหน      🚀 สมัครเลย!
   <div class="newsletter-card">
@@ -354,7 +360,7 @@
             
 
             <!-- Widget 03 -->
-            <div class="widget">
+            <div class="widget order-w-f-purple">
               💬 ติดต่อด่วน
 ชื่อ        เรื่องที่ต้องการติดต่อ      ข้อความสั้นๆ        📤 ส่งเลย
          <div class="contact-card">
@@ -400,7 +406,7 @@
             </div>
 
             <!-- Widget 04 -->
-            <div class="widget">
+            <div class="widget order-w-fb">
        <div class="widget-title">Facebook Like</div>
 <p class="post-description">
   <div class="auther-photo2">กล่อง Facebook Like (ตัวอย่าง)
@@ -408,7 +414,7 @@
             </div>
 
             <!-- Widget 05 -->
-            <div class="widget">
+            <div class="widget order-w-sp">
              <div class="widget-title">Sponsor</div>
 <p class="post-description">   
   <div class="auther-photo3">พื้นที่โฆษณา / วิดีโอ</div>   
@@ -417,7 +423,7 @@
 
         </div>
 
-            <div class="card" style="margin-top: 30px">
+            <div class="card card-margin">
               <p class="post-headline">
                 CATEGORY ARCHIVES:<b> RESPONSIVE DESIGN</b>
               </p>
@@ -525,6 +531,26 @@
 <p>Designed for educational/demo purposes •</p>
 <a href="">Contact</a>
     </footer>
-   
+       <script>
+        var burgerMenu = document.getElementById('hamberger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
   </body>
 </html>

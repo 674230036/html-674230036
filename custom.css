@@ -77,7 +77,6 @@ a:hover {
 .nav-menu {
   display: flex;
   justify-content: start;
-  align-items: center;
   list-style-type: none;
   flex-wrap: wrap;
 }
@@ -395,7 +394,7 @@ a:hover {
 .form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 15px;
+  gap: 5px;
 }
 .form-group {
   margin-bottom: 15px;
@@ -682,4 +681,145 @@ footer {
   padding: 40px 0px;
   margin-top: 20px;
   text-align: center;
+}
+.card-margin {
+  margin: 30px 0px;
+}
+/* Resounsive */ /* Desktop Screen: 992px-1199 */
+/* Tablet Screen: 769-992 */
+@media (max-width: 992px) {
+  .site-header {
+    background-color: rgb(225, 241, 0);
+  }
+  .content-grid {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .form-checkbox-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .card-margin {
+    margin: 5px 25px;
+  }
+  .header-inner {
+    padding: 0 20px;
+  }
+}
+/* mobile Screen: 577-768 */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .site-header {
+    background-color: rgb(21, 255, 0);
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-menu {
+    flex-direction: column;
+    padding: 5px 40px;
+  }
+  .nav-menu li a {
+    border-top: 1px solid rgb(194, 190, 190);
+  }
+  .gold-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .header-inner {
+    padding: 0 40px;
+  }
+}
+/* Mobile smail Screen: 1-576*/
+@media (max-width: 576px) {
+  .site-header {
+    background-color: rgb(247, 0, 255);
+  }
+  /*hamberger menu*/
+  #hamberger-menu {
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    margin-left: 40px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  #hamberger-menu span,
+  #hamberger-menu span:before,
+  #hamberger-menu span:after {
+    background-color: white;
+    height: 3px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    content: "";
+    /* จัดตำเเหน่งเส้น */
+  }
+  #hamberger-menu span {
+    top: 11px;
+  }
+  #hamberger-menu span:before {
+    top: -8px;
+  }
+  #hamberger-menu span:after {
+    top: 8px;
+  }
+  /* ซ่อนเมนูหลัก */
+  #menu {
+    display: none;
+    flex-direction: column;
+  }
+  /* สร้างเส้น X  */
+  #hamberger-menu.close span {
+    background: transparent;
+  }
+  #hamberger-menu.close span:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #hamberger-menu.close span:after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  #menu.overlay {
+    display: flex;
+  }
+  /* การสลับตำเเหน่ง */
+  .order-box-image {
+    order: 3;
+  }
+  .order-box-table {
+    order: 1;
+  }
+  .order-box-from {
+    order: 2;
+  }
+  .order-w-intro {
+    order: 1;
+  }
+  /* /* สลับตำเเหน่ง wigdget */
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+  .order-w-f-green {
+    order: -4;
+  }
+  .order-w-f-purple {
+    order: -5;
+  }
+  .order-w-fb {
+    order: -2;
+  }
+  .order-w-sp {
+    order: -3;
+  }
 }
