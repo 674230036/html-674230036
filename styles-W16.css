@@ -427,6 +427,16 @@ footer {
 }
 .show-menu {
 }
-@media (max-width: 480px) {
+@media (max-width: 580px) {
+   .form-actions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 16px;
+    }
 }
 /* ปุ่มยืด wid100 footer เป็นflex colum*/
