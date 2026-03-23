@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="เว็ปไซด์แนะนำสถานที่ท่องเที่ยวในจังหวัด พร้อมข้อมูลและภาพประกอบที่น่าสนใจ" />
+    <title>Responsive Web Test (Suphanat)</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+
+    <!-- ให้ นศ. เพิ่มลิงค์ Google Fonts เอง 1 font -->
+
+
+    <!-- ตรวจสอบส่วน head ให้ดีว่ามีอะไรขาดหายไปอีกบ้าง ถ้ามีก็ใส่ให้ครบ -->
+
+
+    <!-- เขียน style sheet เพิ่มเติมให้ใกล้เคียงกับตัวอย่าง -->
+    <style>
+        
+        /* ========== Reset เบื้องต้น ========== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f7fb;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+
+        /* ========== ใช้รวม ๆ ========== */
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        section {
+            padding: 50px 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #1f3c88;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+
+        h3 {
+            color: #1f3c88;
+            margin-bottom: 10px;
+        }
+
+        /* ========== Header ========== */
+        .navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 80px;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,0.05);
+position:relative;
+}
+
+.logo{
+font-weight:bold;
+font-size: 24px;
+color: #0245fc;
+}
+
+.nav-menu{
+display:flex;
+gap:25px;
+list-style:none;
+}
+
+.nav-menu a{
+text-decoration:none;
+color:#333;
+}
+.active:hover{
+  background-color: rgb(168, 165, 162);
+  padding: 10px 10px;
+  border-radius: 10px;
+  
+}
+
+
+.menu-toggle{
+display:none;
+font-size:24px;
+cursor:pointer;
+}
+   
+ /* ========== Hero ========== */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:60px;
+background:linear-gradient(to right,#e8f1ff,#f7faff);
+gap:40px;
+}
+
+.hero-text{
+max-width:520px;
+}
+
+.hero-text h1{
+margin-bottom:15px;
+}
+
+.hero img{
+width:780px;
+border-radius:20px;
+}
+
+/* Section */
+.section-title{
+text-align:center;
+margin-top:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:40px 60px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-body{
+padding:15px;
+}
+
+.card button{
+margin-top:10px;
+background:#ffbb02;
+border:none;
+color:white;
+padding:8px 15px;
+border-radius:6px;
+cursor:pointer;
+}
+.btnhadeder{
+    background:#ffbb02;
+border:none;
+color:white;
+padding:8px 15px;
+border-radius:6px;
+cursor:pointer;
+}
+ .btnhadeder:hover{
+  background-color: rgb(168, 165, 162);
+}
+
+/* Footer */
+footer{
+background:#1e3a8a;
+color:white;
+text-align:center;
+padding:15px;
+}
+        /* =====เขียน style sheet เพิ่มเติม เพื่อให้รองรับการ responsive ด้านล่าง ========== */
+
+        /* ========== โดยทุกอย่างต้องแสดงเป็น 1 คอลัมน์ เหมือนตัวอย่าง ========== */
+
+        @media (max-width: 768px) {
+  .solution-content,
+  .discover-content {
+    grid-template-columns: 1fr;
+  }
+  .footer-right {
+    flex-wrap: wrap;
+  }
+  .header-button {
+    display: none;
+  }
+  .nav-menu{
+    width: 100%;
+    flex-direction: column;
+    gap: 2px;
+    text-align: center;
+  }
+  .nav-menu li a {
+    display: block;
+    padding: 6px 15px;
+  }
+  .footer-container {
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+ <nav class="navbar">
+<div class="logo">เที่ยวเมืองน่าไป (ราชบุรี)</div>
+
+   <div id="burger-menu">
+                <span></span>
+            </div>
+        </div>
+
+<ul class="nav-menu" id="nav-menu">
+<li><a href="#P1" class="active"> หน้าแรก</a></li>
+<li><a href="#P2" class="active">สถานที่ท่องเที่ยว</a></li>
+<li><a href="#P3" class="active">ติดต่อ</a></li>
+</ul>
+</nav>
+
+
+<!-- Hero -->
+        
+            
+                <section class="hero" id="P1">
+                <div class="hero-text">
+                    <p>จังหวัดที่เเนะนำ</p>
+                <h1>เที่ยวราชบุรี เมืองแห่งธรรมชาติและวัฒนธรรม</h1>
+                <p>พบกับสถานที่ท่องเที่ยวสวยงาม ตลาดน้ำ ภูเขา และแลนด์มาร์กสำคัญของจังหวัดราชบุรี</p>
+                <button class="btnhadeder">อ่านเพิ่มเติม</button>
+                </div>
+                <img src="https://cms.dmpcdn.com/travel/2021/05/24/c19428b0-bc9a-11eb-8bd8-57df71496d99_original.jpg">
+                </section>
+                <!-- Places Section - สถานที่ท่องเที่ยวแนะนำ -->
+                <section>
+                   <h2 class="section-title">สถานที่ท่องเที่ยวแนะนำ จังหวัดราชบุรี</h2>
+                    <p class="section-title">ตัวอย่างสถานที่ท่องเที่ยวที่น่าสนใจในจังหวัด</p>
+               <div class="cards">
+               <div class="card" id="P2">
+               <img src="https://เที่ยวราชบุรี.com/wp-content/uploads/2011/11/IMG_3898-text.jpg">
+              <div class="card-body">
+              <h3>อุทยานหินเขางู</h3>
+              <p>เดิมเป็นแหล่งระเบิดและย่อยหินที่สำคัญของไทยตั้งแต่สมัยต้นรัตนโกสินทร์ เนื่องจากเป็นปูนที่มีคุณภาพดี</p>
+               <button class="btnhadeder">อ่านเพิ่มเติม</button>
+               </div>
+                 </div>
+             <div class="card">
+               <img src="https://เที่ยวราชบุรี.com/wp-content/uploads/2023/06/IMG_8973-1.jpg">
+               <div class="card-body">
+                <h3>หนังใหญ่วัดขนอน</h3>
+                <p>ได้มีการสร้างในสมัยพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว (ร.5) ผู้ริเริ่มในการแกะสลักตัวหนังคือ</p>
+             <button class="btnhadeder">อ่านเพิ่มเติม</button>
+             </div>
+               </div>
+               <div class="card">
+                 <img src="https://happeningbkk.com/media/upload/2025/02/6hkj9bbdbagb5aa66j99e41.jpg">
+               <div class="card-body">
+              <h3>ถ้ำค้างคาวและวัดเขาช่องพราน</h3>
+                   <p>ค้างคาวนับล้านตัวที่กรูกันบินออกจากถ้ำพวยพุ่งเป็นสายสีดำนานนับชั่วโมงทุกเย็นช่วงใกล้พลบค่ำ</p>
+            <button class="btnhadeder">อ่านเพิ่มเติม</button>
+            </div>
+                   </div>
+                
+                </div>
+                </section>
+            </main> 
+            <footer id="P3">
+                    <div class="footer-container">
+                        <div class="footer-right">
+                            <p>©2026 เที่ยวเมืองน่าไป (Suphanat Junprem). All Rights Reserved.</p>
+                            <span>Email: 674230036</span>
+                            <span>Facebook: Suphanat Junprem</span>
+                        </div>
+                    </div>
+                </footer>
+        </div>
+</div>
+
+</body>
+
+</html>
